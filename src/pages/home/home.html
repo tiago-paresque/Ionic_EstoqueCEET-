@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-navbar>
+       
+      <ion-title text-center>
+        Estoque CEET
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content class="bg-image no-scroll" padding >
+    <ion-list>
+  <br>
+  <br>
+  
+      <ion-item>
+        <ion-label stacked>E-mail</ion-label>
+        <ion-input type="text" [(ngModel)]="nome"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label stacked>Senha</ion-label>
+        <ion-input type="password" [(ngModel)]="senha"></ion-input>
+      </ion-item>
+      <br>
+      <br>
+      <button ion-button full (click)="logar(nome,senha)">Entrar</button>    
+      
+    </ion-list>
+   
+  </ion-content>
+  

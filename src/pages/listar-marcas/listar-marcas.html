@@ -1,0 +1,32 @@
+<!--
+  Generated template for the ListarMarcasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle >
+          <ion-icon name="menu"></ion-icon>          
+        </button>
+    <ion-title>   Listar marcas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item-sliding *ngFor="let marca of marcas">
+          <ion-item>
+            
+            <h2>{{ marca.nome }}</h2>
+          </ion-item>
+    
+        </ion-item-sliding>
+    
+      </ion-list>
+    
+    
+</ion-content>
